@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여행 기록 사이트 와이어프레임</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body { background: #f4f4f4; color: #333; }
+    header { background: #ddd; padding: 20px; text-align: center; font-size: 1.5rem; font-weight: bold; }
+
+    .container { width: 90%; max-width: 1200px; margin: 20px auto; display: grid; gap: 20px; }
+    section { background: #fff; border: 2px dashed #aaa; border-radius: 8px; padding: 20px; }
+
+    h2 { margin-bottom: 15px; font-size: 1.2rem; }
+
+    /* 그리드 레이아웃 */
+    .map-record { display: grid; grid-template-columns: 2fr 1fr; gap: 15px; }
+    .qa-list, .reward-items, .tier-cards, .review-slider, .companion-list, .quiz-download {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .card { flex: 1; min-width: 150px; background: #eee; padding: 15px; border-radius: 6px; text-align: center; }
+
+    .form-group { margin-bottom: 10px; }
+    input, select, button { width: 100%; padding: 8px; margin-top: 5px; }
+
+    button { background: #ccc; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #bbb; }
+  </style>
+</head>
+<body>
+  <header>여행 기록 사이트 와이어프레임</header>
+  <div class="container">
+
+    <!-- 지도 & 여행 기록 -->
+    <section>
+      <h2>지도 & 여행기록</h2>
+      <div class="map-record">
+        <div class="card">[지도 영역]</div>
+        <div>
+          <div class="card">여행 기록 카드 1</div>
+          <div class="card">여행 기록 카드 2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 질문 & 답변 -->
+    <section>
+      <h2>질문 & 답변</h2>
+      <input type="text" placeholder="궁금한 여행 질문 검색..." />
+      <div class="qa-list">
+        <div class="card">Q. 질문 예시</div>
+        <div class="card">Q. 질문 예시</div>
+      </div>
+      <button>질문하기</button>
+    </section>
+
+    <!-- 여행 티어 -->
+    <section>
+      <h2>여행 티어</h2>
+      <div class="tier-cards">
+        <div class="card">Bronze</div>
+        <div class="card">Silver</div>
+        <div class="card">Gold</div>
+      </div>
+    </section>
+
+    <!-- 포인트 적립 & 리워드 -->
+    <section>
+      <h2>포인트 적립 & 리워드</h2>
+      <p>현재 포인트: XXXX</p>
+      <div class="reward-items">
+        <div class="card">숙박 할인쿠폰</div>
+        <div class="card">비행기 마일리지</div>
+        <div class="card">기념품 교환</div>
+      </div>
+    </section>
+
+    <!-- AI 여행 계획 -->
+    <section>
+      <h2>AI 여행 계획 짜주기</h2>
+      <div class="form-group">
+        <label>여행 기간</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label>여행 지역</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>여행 스타일</label>
+        <select>
+          <option>휴양</option>
+          <option>액티비티</option>
+          <option>맛집</option>
+          <option>문화</option>
+        </select>
+      </div>
+      <button>AI 추천 일정 보기</button>
+    </section>
+
+    <!-- 리뷰 & 무한 슬라이드 -->
+    <section>
+      <h2>리뷰</h2>
+      <div class="review-slider">
+        <div class="card">★☆☆☆☆ 리뷰 1</div>
+        <div class="card">★★★☆☆ 리뷰 2</div>
+        <div class="card">★★★★★ 리뷰 3</div>
+      </div>
+    </section>
+
+    <!-- 여행 동행자 찾기 -->
+    <section>
+      <h2>여행 동행자 찾기</h2>
+      <div class="companion-list">
+        <div class="card">동행자 A</div>
+        <div class="card">동행자 B</div>
+        <div class="card">동행자 C</div>
+      </div>
+    </section>
+
+    <!-- 퀴즈 & 다운로드 -->
+    <section>
+      <h2>퀴즈 & 다운로드</h2>
+      <div class="quiz-download">
+        <div class="card">퀴즈: 당신의 여행 성향은?</div>
+        <div class="card">앱 다운로드 QR</div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
