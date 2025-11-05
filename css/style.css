@@ -195,14 +195,31 @@ body {
     line-height: 30px;
 }
 
+.choosing_resort_button {
+    display: flex;
+    gap: 20px;
+}
+
 .resort_button {
     width: 180px;
     height: 60px;
     border-radius: 50px;
-    border: 2px;
     font-size: 24px;
+    border: none;
     color: #1B6B8D;
     background-color: #DEEFF6;
+    cursor: pointer;
+}
+
+.resort_button_2 {
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 24px;
+    border: none;
+    color: #1B6B8D;
+    background-color: #DEEFF6;
+    cursor: pointer;
 }
 
 .choosing_resort_text_2 {
@@ -220,6 +237,7 @@ body {
 .choosing_resort_text_box > h3 {
     font-size: 40px;
     margin-left: 50px;
+    margin-top: 40px;
 }
 
 .choosing_resort_text_box > p {
@@ -305,7 +323,6 @@ body {
 }
 
 .travel_companion_text_box > button {
-    color: #fff;
     width: 190px;
     height: 50px;
     display: flex;
@@ -410,7 +427,7 @@ body {
     width: 1070px;
     height: 745px;
     background-color: #fff;
-    border: 2px;
+    border: 2px solid#555555;
     border-radius: 25px;
     overflow: hidden;
     overflow: scroll;
@@ -443,4 +460,127 @@ body {
     font-size: 24px;
     line-height: 35px;
 }
+
+.q_a_input {
+    width: 1070px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid#555555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.q_a_input > input {
+    border: none;
+    width: 1000px;
+}
+
+.q_a_input > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 /* q&a 끝 */
+
+/* common_sense 시작 */
+.common_sense {
+    background: url(../image/Common\ sense_main.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.common_sense > h2 {
+    font-size: 128px;
+    color: #fff;
+    text-align: center;
+}
+
+.common_sense_box_1 {
+    display: flex;
+}
+
+.common_sense_box_1 > p {
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.common_sense_box_2 {
+    display: flex;
+}
+
+.common_sense_box_2 > p {
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 40px;
+}
+/* common_sense 끝 */
+
+/* review 시작 */
+.review {
+    background: url(../image/Review_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.review > h2 {
+    font-size: 64px;
+    color: #ddd;
+}
+
+.review_box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review_slide {
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 32px 56px;
+    align-items: center;
+}
+
+.review_box_text {
+    margin-top: 40px;
+    width: 490px;
+    height: 175px;
+    background-color: #9b9a9a;
+    border-radius: 25px;
+}
+
+.review_box_user {
+    display: flex;
+    gap: 6px;
+    padding: 10px 18px;
+}
+
+.review_box_user > h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.review_box_text_2 {
+    font-size: 16px;
+    margin-left: 80px;
+    line-height: 20px;
+}
+
+.review_box_text_3 {
+    font-size: 16px;
+    color: #31326F;
+    margin-top: 10px;
+}
+/* review 끝 */
