@@ -28,3 +28,419 @@
     font-display: swap;
 }
 /* Interop 폰트 끝 */
+
+/* noto sans kr 폰트 */
+.noto-sans-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* noto sans kr 폰트 끝 */
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* main_section 시작 */
+.main_section {
+    background: url(../image/main_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header > h1 {
+
+}
+
+.main_text {
+    font-size: 68px;
+    color: #fff;
+    margin-top: 260px;
+}
+
+.main_text_1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+}
+
+.main_text_2 {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.main_section > button {
+    width: 165px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px;
+}
+/* main_section 끝 */
+
+/* introduction 시작 */
+.introduction {
+    background: url(../image/introduction_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.introduction_top_text {
+    color: #fff;
+}
+
+.introduction_top_text > h2 {
+    font-size: 96px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+}
+
+.introduction_top_text > p {
+    font-size: 32px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+}
+
+.introduction_main_text {
+    color: #fff;
+    font-size: 40px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+}
+/* introduction 끝 */
+
+/* visited_section 시작 */
+.visited_section {
+    background: url(../image/visited\ Places_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.visited_text {
+    color: #fff;
+}
+
+.visited_text > h2 {
+    font-size: 40px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+}
+
+.visited_text > p {
+    font-size: 24px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.visited_box {
+    border: 2px;
+    border-radius: 20px;
+    width: 1300px;
+    height: 695px;
+    background: linear-gradient(#FFFFFF 40%, #999999 0%);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    gap: 66px;
+}
+
+.visited_box_text > h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.visited_box_text > p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.visited_box_shaer > button {
+    width: 550px;
+    height: 55px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px;
+    margin-top: 100px;
+}
+/* visited_section 끝 */
+
+/* choosing_resort 시작 */
+.choosing_resort {
+    background: url(../image/Choosing\ a\ Resort_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.choosing_resort_text {
+    text-align: end;
+    margin-right: 70px;
+}
+
+.choosing_resort_text > h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.choosing_resort_text > p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.resort_button {
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px;
+    font-size: 24px;
+    color: #1B6B8D;
+    background-color: #DEEFF6;
+}
+
+.choosing_resort_text_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.choosing_resort_text_box {
+    width: 865px;
+    height: 280px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.choosing_resort_text_box > h3 {
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.choosing_resort_text_box > p {
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+/* choosing_resort 끝 */
+
+/* moments 시작 */
+.moments {
+    background: url(../image/Moments_main.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.moments_text {
+    text-align: center;
+}
+
+.moments_text > h2 {
+    font-size: 48px;
+}
+
+.moments_text > p {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.moments_1 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 110px;
+}
+
+.moments_2 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.moments_1 > p {
+    font-size: 32px;
+    width: 595px;
+    height: 185px;
+    background-color: #fff;
+    border: 2px;
+    border-radius: 80px 130px 130px 0px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.moments_2 > p {
+    font-size: 32px;
+    width: 645px;
+    height: 185px;
+    background-color: #fff;
+    border: 2px;
+    border-radius: 130px 130px 0px 130px;
+    text-align: center;
+    line-height: 40px;
+}
+/* moments 끝 */
+
+/* travel_companion 시작 */
+.travel_companion {
+    background: url(../image/Travel\ Companion_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.travel_companion_text_box {
+    display: flex;
+    gap: 35px;
+}
+
+.travel_companion_text_box > h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.travel_companion_text_box > button {
+    color: #fff;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    border: 2px;
+    border-radius: 50px;
+}
+
+.travel_companion_text {
+    line-height: 20px;
+}
+
+.travel_companion_text > p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.travel_companion_box {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.travel_companion_box_1 {
+    width: 580px;
+    height: 700px;
+    background: #fff;
+    border: 2px;
+    border-radius: 25px;
+}
+
+.travel_companion_box_2 {
+    width: 580px;
+    height: 700px;
+    background: #fff;
+    border: 2px;
+    border-radius: 25px;
+}
+
+.companion_text_box {
+    background: #999999;
+    width: 460px;
+    height: 175px;
+    border-radius: 25px;
+}
+
+.companion_text_box {
+    font-size: 24px;
+}
+
+.companion_text_box_2 {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.travel_companion_box_1 > button {
+    width: 300px;
+    height: 50px;
+    background-color: #DEEFF6;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.travel_companion_box_2 > button {
+    width: 300px;
+    height: 50px;
+    background-color: #DEEFF6;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/* travel_companion 끝 */
+
+/* q&a 시작 */
+.q_a {
+    background: url(../image/Q&A_img.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.q_a_top_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    color: #fff;
+}
+
+.q_a_top_text > h2 {
+    font-size: 64px;
+}
+
+.q_a_top_text > p {
+    font-size: 32px;
+}
+
+.q_a_text_box {
+    width: 1070px;
+    height: 745px;
+    background-color: #fff;
+    border: 2px;
+    border-radius: 25px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.question {
+    padding: 72px 56px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.question > .other {
+    width: 530px;
+    height: 170px;
+    background-color: #FFF6D9;
+    border: 1px solid#555555;
+    border-radius: 50px;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.question > .my_text {
+    width: 610px;
+    height: 170px;
+    background-color: #c0bfbf;
+    border: 1px solid#555555;
+    border-radius: 130px;
+    font-size: 24px;
+    line-height: 35px;
+}
+/* q&a 끝 */
