@@ -48,16 +48,17 @@ body {
     background: url(../image/main_img.png);
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
 
-.header > h1 {
-
+header {
+    padding: 32px;
 }
 
 .main_text {
     font-size: 68px;
     color: #fff;
-    margin-top: 260px;
+    margin: 260px 0 0 100px;
 }
 
 .main_text_1 {
@@ -75,8 +76,29 @@ body {
     width: 165px;
     height: 80px;
     border-radius: 50px;
-    border: 2px;
+    border: 0.5px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
 }
+
+.main_section > button > img {
+    animation: main_downicon 2s infinite;
+}
+
+@keyframes main_downicon {
+    0% {
+        transform: translateY(-10px);
+    }
+     
+    50% {
+        transform: translateY(0);
+    }
+}
+
 /* main_section 끝 */
 
 /* introduction 시작 */
@@ -139,11 +161,12 @@ body {
 }
 
 .visited_box {
-    border: 2px;
+    border: 1.5px solid #8F8F8F;
     border-radius: 20px;
     width: 1300px;
     height: 695px;
-    background: linear-gradient(#FFFFFF 40%, #999999 0%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
     padding: 16px;
@@ -153,13 +176,14 @@ body {
 .visited_box_text > h2 {
     font-size: 40px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .visited_box_text > p {
     font-size: 20px;
     color: #fff;
     margin-top: 40px;
+    line-height: 26px;
 }
 
 .visited_box_shaer > button {
@@ -168,8 +192,10 @@ body {
     font-size: 24px;
     color: #fff;
     border-radius: 50px;
-    border: 2px;
+    border: 0.5px solid #8F8F8F;
     margin-top: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 /* visited_section 끝 */
 
@@ -286,8 +312,9 @@ body {
     font-size: 32px;
     width: 595px;
     height: 185px;
-    background-color: #fff;
-    border: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border: 1.5px solid #A9A9A9;
     border-radius: 80px 130px 130px 0px;
     text-align: center;
     line-height: 40px;
@@ -297,8 +324,9 @@ body {
     font-size: 32px;
     width: 645px;
     height: 185px;
-    background-color: #fff;
-    border: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border: 1.5px solid #A9A9A9;
     border-radius: 130px 130px 0px 130px;
     text-align: center;
     line-height: 40px;
@@ -329,8 +357,11 @@ body {
     justify-content: space-between;
     font-size: 20px;
     align-items: center;
-    border: 2px;
+    border: 1px solid#8F8F8F;
     border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 18px;
 }
 
 .travel_companion_text {
@@ -351,16 +382,18 @@ body {
 .travel_companion_box_1 {
     width: 580px;
     height: 700px;
-    background: #fff;
-    border: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #8F8F8F;
     border-radius: 25px;
 }
 
 .travel_companion_box_2 {
     width: 580px;
     height: 700px;
-    background: #fff;
-    border: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #8F8F8F;
     border-radius: 25px;
 }
 
@@ -426,8 +459,9 @@ body {
 .q_a_text_box {
     width: 1070px;
     height: 745px;
-    background-color: #fff;
-    border: 2px solid#555555;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid#fff;
     border-radius: 25px;
     overflow: hidden;
     overflow: scroll;
@@ -464,9 +498,9 @@ body {
 .q_a_input {
     width: 1070px;
     height: 50px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
-    border: 1px solid#555555;
     display: flex;
     justify-content: space-between;
 }
@@ -474,6 +508,12 @@ body {
 .q_a_input > input {
     border: none;
     width: 1000px;
+    background: none;
+}
+
+.q_a_input > input::placeholder {
+    color: #fff;
+    font-size: 16px;
 }
 
 .q_a_input > button {
@@ -503,7 +543,8 @@ body {
 .common_sense_box_1 > p {
     width: 650px;
     height: 400px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     font-size: 24px;
     line-height: 40px;
@@ -516,7 +557,8 @@ body {
 .common_sense_box_2 > p {
     width: 650px;
     height: 400px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     font-size: 24px;
     line-height: 40px;
@@ -544,7 +586,8 @@ body {
 .review_slide {
     width: 700px;
     height: 500px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 25px;
     padding: 32px 56px;
     align-items: center;
@@ -554,7 +597,8 @@ body {
     margin-top: 40px;
     width: 490px;
     height: 175px;
-    background-color: #9b9a9a;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 25px;
 }
 
