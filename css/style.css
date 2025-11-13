@@ -283,6 +283,14 @@ header {
     margin-left: 50px;
     margin-top: 40px;
 }
+
+.choosing_resort_ticket > .ticket {
+    transform: translate(1500px)
+}
+
+.choosing_resort_ticket > .ticket_end {
+    transform: translateY(-60%);
+}
 /* choosing_resort 끝 */
 
 /* moments 시작 */
@@ -326,9 +334,12 @@ header {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
     border: 1.5px solid #A9A9A9;
-    border-radius: 80px 130px 130px 0px;
-    text-align: center;
+    border-radius: 130px 130px 130px 0px;
     line-height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .moments_2 > p {
@@ -339,8 +350,12 @@ header {
     backdrop-filter: blur(3px);
     border: 1.5px solid #A9A9A9;
     border-radius: 130px 130px 0px 130px;
-    text-align: center;
     line-height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 /* moments 끝 */
 
@@ -354,6 +369,7 @@ header {
 .travel_companion_text_box {
     display: flex;
     gap: 35px;
+    margin: 0 0 0 130px;
 }
 
 .travel_companion_text_box > h2 {
@@ -482,7 +498,7 @@ header {
     width: 1070px;
     height: 745px;
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border: 1.5px solid#fff;
     border-radius: 25px;
     overflow: hidden;
@@ -502,8 +518,6 @@ header {
 .question > .other > span {
     width: 610px;
     height: 170px;
-    background-color: #c0bfbf;
-    border: 1px solid#555555;
     border-radius: 130px;
     font-size: 24px;
     line-height: 35px;
@@ -512,7 +526,6 @@ header {
 
 .question > .other > span  {
     width: 530px;
-    background-color: #FFF6D9;
 }
 
 .my_text {
@@ -545,7 +558,38 @@ header {
     border: none;
     cursor: pointer;
 }
+
+/* liquidGlass 효과 시작 */
+.liquidGlass-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.liquidGlass-effect {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px);
+    filter: url(#glass-distortion);
+}
+
+.liquidGlass-tint {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.liquidGlass-shine {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.liquidGlass-text {
+    z-index: 3;
+}
+/* glass 효과 끝 */
 /* q&a 끝 */
+
 
 /* common_sense 시작 */
 .common_sense {

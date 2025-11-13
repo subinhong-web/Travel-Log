@@ -184,8 +184,8 @@
         </div>
 
         <div class="choosing_resort_ticket">
-            <img src="./image/ticket_1.png" alt="ticket">
-            <img src="./image/ticket_2.png" alt="ticket">
+            <img src="./image/ticket_1.png" alt="ticket" class="ticket">
+            <img src="./image/ticket_2.png" alt="ticket" class="ticket_end">
         </div>
     </section>
 
@@ -303,70 +303,85 @@
 
         <div class="q_a_text_box">
             <div class="question">
-                <p class="other">
-                    <figure>
-                        <img src="./image/qa_other.png" alt="qa_other_img">
-                    </figure>
-                    <span>
-                        Is it really hot here??? Is it dry heat??
-                        <br>
-                        Or is it humid heat???
-                    </span>
-                </p>
-                <p class="my_text">
-                    <figure>
-                        <img src="./image/qa_my_text.png" alt="qa_my_text_img">
-                    </figure>
-                    <span>
-                        Since it's completely dry,
-                        <br>
-                        you should pack at least five bottles of mist.
-                    </span>
-                </p>
-                <p class="other">
-                    <figure>
-                        <img src="./image/qa_other.png" alt="qa_other_img">
-                    </figure>
-                    <span>
-                        I want to go skydiving.
-                        <br>
-                        Is it possible to guarantee my life??
-                    </span>
-                </p>
-                <p class="my_text">
-                    <figure>
-                        <img src="./image/qa_my_text.png" alt="qa_my_text_img">
-                    </figure>
-                    <span>
-                        You're responsible for your own life.
-                        <br>
-                        If you're scared, just don't do it.
-                    </span>
-                </p>
-                <p class="other">
-                    <figure>
-                        <img src="./image/qa_other.png" alt="qa_other_img">
-                    </figure>
-                    <span>
-                        Recommend a great coffee spot, please.
-                        <br>
-                        Something without acidity.
-                        <br>
-                        Oh, with a seaside view.
-                    </span>
-                </p>
-                <p class="my_text">
-                    <figure>
-                        <img src="./image/qa_my_text.png" alt="qa_my_text_img">
-                    </figure>
-                    <span>
-                        There's no coffee shop there,
-                        <br>
-                        but there's a gas station 5 km away—maybe
-                        <br>
-                        I could get some gasoline...?
-                    </span>
-                </p>
+                <div class="wrapper">
+                    <div class="liquidGlass-effect"></div>
+                    <div class="liquidGlass-tint"></div>
+                    <div class="liquidGlass-shine"></div>
+                    <svg style="display: none">
+                        <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%"
+                            filterUnits="objectBoundingBox">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="1" seed="5"
+                                result="turbulence" />
+                            <!-- Seeds: 14, 17,  -->
+
+                            <feComponentTransfer in="turbulence" result="mapped">
+                                <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                                <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                                <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+                            </feComponentTransfer>
+
+                            <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+                            <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1"
+                                specularExponent="100" lighting-color="white" result="specLight">
+                                <fePointLight x="-200" y="-200" z="300" />
+                            </feSpecularLighting>
+
+                            <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"
+                                result="litImage" />
+
+                            <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150" xChannelSelector="R"
+                                yChannelSelector="G" />
+                        </filter>
+                    </svg>
+                    <p class="liquidGlass-text">
+                        <span>
+                            Is it really hot here??? Is it dry heat??
+                            <br>
+                            Or is it humid heat???
+                        </span>
+                    </p>
+                    <p class="liquidGlass-text">
+                        <span>
+                            Since it's completely dry,
+                            <br>
+                            you should pack at least five bottles of mist.
+                        </span>
+                    </p>
+                    <p class="liquidGlass-text">
+                        <span>
+                            I want to go skydiving.
+                            <br>
+                            Is it possible to guarantee my life??
+                        </span>
+                    </p>
+                    <p class="liquidGlass-text">
+                        <span>
+                            <figure>
+                                You're responsible for your own life.
+                                <br>
+                                If you're scared, just don't do it.
+                        </span>
+                    </p>
+                    <p class="liquidGlass-text">
+                        <span>
+                            Recommend a great coffee spot, please.
+                            <br>
+                            Something without acidity.
+                            <br>
+                            Oh, with a seaside view.
+                        </span>
+                    </p>
+                    <p class="liquidGlass-text">
+                        <span>
+                            There's no coffee shop there,
+                            <br>
+                            but there's a gas station 5 km away—maybe
+                            <br>
+                            I could get some gasoline...?
+                        </span>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="q_a_input">
